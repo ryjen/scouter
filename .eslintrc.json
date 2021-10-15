@@ -1,0 +1,33 @@
+{
+  "extends": ["prettier", "prettier/react", "plugin:react-native/all", "plugin:flowtype/recommended"],
+  "plugins": ["react", "react-native", "prettier", "module-resolver", "jsx-a11y", "flowtype"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", "jsx"]
+      }
+    ],
+    "prettier/prettier": "error",
+    "max-len": ["error", 80]
+  },
+  "env": {
+    "react-native/react-native": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+      }
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  }
+}

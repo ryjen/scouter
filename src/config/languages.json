@@ -1,0 +1,23 @@
+{
+    "en": {
+        "appName": "Scouter",
+        "name": "Name",
+        "noGames": "No games available right now",
+        "games": "Games",
+        "game": "Game",
+        "cancel": "Cancel",
+        "save": "Save",
+        "errorAdding": "Could not add new {0}, please try again ({1})",
+        "ok": "OK",
+        "newGame": "New Game",
+        "newThing": "Scout Something",
+        "maxThings": "Max Things",
+        "players": "Players",
+        "noPlayers": "No players found",
+        "player": "Player",
+        "things": "Things",
+        "noThings": "Nothing scouted yet",
+        "startGame": "Start Game",
+        "sort": "Sort"
+    }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "scouter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint src --ext js,jsx",
+    "check-staged": "lint-staged"
+  },
+  "dependencies": {
+    "firebase": "^8.2.5",
+    "native-base": "^2.15.2",
+    "react": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-gesture-handler": "^1.10.0",
+    "react-native-localization": "^2.1.6",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-vector-icons": "^8.0.0",
+    "react-navigation": "^4.4.3",
+    "react-navigation-transitions": "^1.0.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/runtime": "^7.12.13",
+    "@firebase/app-types": "^0.6.1",
+    "@firebase/auth-types": "^0.10.1",
+    "@firebase/storage-types": "^0.4.1",
+    "@firebase/util": "^1.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-module-resolver": "^1.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "flow-bin": "^0.153.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.4",
+    "lint-staged": "^11.0.0",
+    "metro-react-native-babel-preset": "^0.66.0",
+    "prettier": "^2.3.1",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint"
+    ]
+  }
+}
